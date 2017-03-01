@@ -6,9 +6,9 @@ class SmallestDivisibleOneToTwenty
 
     divisors       = [ 11, 13, 14, 16, 17, 18, 19, 20 ]
     divisible      = false
-    number         = 20
+    number         = 20 * 19 * 17 * 13 * 11 * 7 * 3
 
-    while true
+    while true # we will stop since 20 * 19 * 18 ... * 4 * 3 * 2 * 1 is divisible by all number from 1 to 20
       divisors.each do |d|
         if number % d == 0        
           divisible = true
@@ -24,6 +24,7 @@ class SmallestDivisibleOneToTwenty
       end
     end
 
+    return 0
   end
       
 end
