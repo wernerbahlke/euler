@@ -1,4 +1,4 @@
-# Project Euler - Problem 5:
+# Project Euler - Problem 5:
 # Find the smallest positive number that is evenly divisible by all of the numbers from 1 to 20
 class SmallestDivisibleOneToTwenty
 
