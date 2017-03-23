@@ -3,11 +3,21 @@
 
 require 'prime'
 
+class FirstPrimes
+
+  def calculate_first_primes_upto n
+
+    primes = Prime.first n
+    puts "The 10001st prime number is #{ primes.last}"
+  end
+
+end
+
 beginning_time = Time.now
 
-primes = Prime.first 10001
+first_primes = FirstPrimes.new
 
-puts "The 10001st prime number is #{ primes.last}"
+first_primes.calculate_first_primes_upto 10001
 
 end_time = Time.now
 
